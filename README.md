@@ -1,0 +1,5 @@
+Initially when creating the app I began with drawing up a wireframe in order to lay out the basic flow of the webpage, linking connected files. I then created a basic file template and SQL tables based on this initial structure.
+
+I found that the sinatra framework really did aid in the creation of the app, and following the flow of operations was quite enjoyable. I did however run into an obsticle when it came to uploading images to the database as well as having enough time to implement as many features as I initially intended. One of the main challenges was also attempting to trace back the origin of any errors.
+
+Moving forward, in order to make the app a little more user friendly I would love to allow for a feature in which you're able to follow other users as well as comment on posts. The addition of an API in order to log travel distance could also be interesting. The styling of the webpage is also something I would very much like to continue working on.
