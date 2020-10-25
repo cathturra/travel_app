@@ -14,6 +14,10 @@ get '/' do
   erb :index
 end
 
+post '/' do 
+  erb :index
+end
+
 get '/login' do 
   erb :'/sessions/login'
 end
@@ -36,11 +40,11 @@ get '/travel_posts' do
   erb(:'/travel_posts', locals: {travel_posts: travel_posts})
 end
 
-post '/travel_posts' do
+# post '/travel_posts' do
   
-  create_post(params[:location], params[:description])
-  redirect '/travel_posts'
-end
+#   create_post(params[:location], params[:description])
+#   redirect '/travel_posts'
+# end
 
 get '/travel_suggestions' do
 
