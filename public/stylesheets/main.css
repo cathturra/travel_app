@@ -1,0 +1,310 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(248, 246, 248)
+}
+
+h2 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 90px;
+    font-weight: lighter;
+    color: rgb(248, 246, 248);
+    letter-spacing: 4px;
+    font-weight: lighter;
+}
+
+p {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+    color: rgb(248, 246, 248);
+    letter-spacing: 2px;
+    padding: 60px;
+}
+
+img {
+    padding: 40px;
+}
+
+body {
+    background-color: rgb(211, 208, 210);
+}
+
+.explore-content {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 27px;
+    font-weight: lighter;
+    color: rgb(248, 246, 248);
+    letter-spacing: 2px;
+}
+
+.main-title {
+    display: flex;
+    flex-direction: row;
+}
+
+.landing {
+    background-image: url(../landing.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.button {
+    border: none;
+    background: none;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 40px;
+    font-weight: lighter;
+    color: rgb(248, 246, 248);
+    letter-spacing: 4px;
+}
+
+button:hover {
+    color: rgb(192, 192, 192);
+    transition: 1s ease-in;
+}
+
+label {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 40px;
+    font-weight: lighter;
+    color: rgb(248, 246, 248);
+    letter-spacing: 4px;
+}
+
+.login-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.main-button {
+    border: none;
+    background: none;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 27px;
+    font-weight: lighter;
+    color: rgb(248, 246, 248);
+    letter-spacing: 4px;
+    padding: 20px;
+}
+
+.main-sub {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 40px;
+    font-weight: lighter;
+    color: rgb(248, 246, 248);
+    letter-spacing: 4px;
+    padding: 70px
+}
+
+.title-button {
+    border: none;
+    background: none;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 27px;
+    font-weight: lighter;
+    color: rgb(248, 246, 248);
+    letter-spacing: 4px;
+    margin: 40px;
+}
+
+.explore-title {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 27px;
+    font-weight: lighter;
+    color: rgb(248, 246, 248);
+    letter-spacing: 4px;
+    margin: 70px;
+}
+
+.explore-title:hover {
+    color: rgb(192, 192, 192);
+    transition: 1s ease-in;
+}
+
+.explore {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 27px;
+    font-weight: lighter;
+    color: rgb(248, 246, 248);
+    letter-spacing: 4px;
+    border-left: 1px solid rgb(248, 246, 248);
+    border-right: 1px solid rgb(248, 246, 248);
+    padding-left: 140px;
+    padding-right: 140px;
+}
+
+.explore:hover {
+    color: rgb(192, 192, 192);
+    transition: 1s ease-in;
+}
+
+.home {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 27px;
+    font-weight: lighter;
+    color: rgb(248, 246, 248);
+    letter-spacing: 4px;
+    margin: 140px;
+    border-right: 1px solid rgb(248, 246, 248);
+    padding-right: 140px;
+}
+
+.home:hover {
+    color: rgb(192, 192, 192);
+    transition: 1s ease-in;
+}
+
+.login-home {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 27px;
+    font-weight: lighter;
+    color: rgb(248, 246, 248);
+    letter-spacing: 4px;
+}
+
+.login-home:hover {
+    color: rgb(192, 192, 192);
+    transition: 1s ease-in;
+}
+
+.login-table {
+    margin-top: 190px;
+}
+
+.create {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 27px;
+    font-weight: lighter;
+    color: rgb(248, 246, 248);
+    letter-spacing: 4px;
+    margin: 140px;
+    border-left: 1px solid rgb(248, 246, 248);
+    padding-left: 140px;
+}
+
+.create:hover {
+    color: rgb(192, 192, 192);
+    transition: 1s ease-in;
+}
+
+.title-button:hover {
+    color: rgb(192, 192, 192);
+    transition: 1s ease-in;
+}
+
+.title-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+}
+
+input[type="text"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    border: none;
+    color: rgb(248, 246, 248);
+    height: 50px;
+    width: 250px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+    letter-spacing: 2px;
+}
+
+input[type="password"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    border: none;
+    color: rgb(248, 246, 248);
+    height: 50px;
+    width: 250px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+    letter-spacing: 2px;
+}
+
+.session-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 170px;
+}
+
+.create-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    flex-direction: column;
+}
+
+.title {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 100px;
+    font-weight: lighter;
+    color: rgb(248, 246, 248);
+    letter-spacing: 9px;
+    padding: 20px;
+}
+
+.sub-container {
+    display: flex;
+    justify-content: center;
+}
+
+.travel-posts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.location {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 60px;
+    font-weight: lighter;
+    color: rgb(248, 246, 248);
+    letter-spacing: 2px;
+    padding: 40px;
+}
+
+.page-top {
+    display: flex;
+    align-items: center;
+}
+
+.col {
+    margin: 40px;
+}
+
+#description-input {
+    height: 120px;
+}
+
+table {
+    margin: 90px auto 70px auto;
+}
+
+.image-container {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.image {
+    height: 100%;
+}
+
+.suggestions {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+

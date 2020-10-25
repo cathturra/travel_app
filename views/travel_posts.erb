@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <a class="explore-title" href= "/create">Create</a>
+            </td>
+            <td>       
+                <div data-scroll-container>
+                    <section data-scroll-section>
+                        <div class="main-title">  
+                            <h2 data-scroll data-scroll-speed="2" data-scroll-section data-scroll-position="top">M</h2>
+                            <h2 data-scroll data-scroll-speed="-1" data-scroll-section data-scroll-position="top">E</h2>
+                            <h2 data-scroll data-scroll-speed="4" data-scroll-section data-scroll-position="top">M</h2>
+                            <h2 data-scroll data-scroll-speed="-2" data-scroll-section data-scroll-position="top">O</h2>
+                            <h2 data-scroll data-scroll-speed="" data-scroll-section data-scroll-position="top">R</h2>
+                            <h2 data-scroll data-scroll-speed="2" data-scroll-section data-scroll-position="top">I</h2>
+                            <h2 data-scroll data-scroll-speed="-1" data-scroll-section data-scroll-position="top">E</h2>
+                            <h2 data-scroll data-scroll-speed="6" data-scroll-section data-scroll-position="top">S</h2>
+                        </div>
+                    </section>   
+                </div>
+            </td>
+            <td>
+                <a class="explore-title" href= "/travel_suggestions">Explore</a>
+            </td>
+        </tr>
+    </table>
+    <div class="travel-posts">
+        <div class="location">
+            <p class="location"> <%= travel_posts[0]["location"].upcase %></p>
+        </div>
+        <div  class="description">
+            <p> <%= travel_posts[0]["description"] %></p>
+        </div>
+        <div class="image-container">
+            <img class="image" src="../venice.jpg">
+        </div>
+    </div>
+    <div class="travel-posts">
+        <div class="image-container">
+            <img class="image" src="../bondi.jpg">
+        </div>
+        <div  class="description">
+            <p> <%= travel_posts[1]["description"] %></p>
+        </div>
+        <div class="location">
+            <p class="location"> <%= travel_posts[1]["location"].upcase %></p>
+        </div>
+    </div>
+    <div class="travel-posts">
+        <div class="location">
+            <p class="location"> <%= travel_posts[2]["location"].upcase %></p>
+        </div>
+        <div  class="description">
+            <p> <%= travel_posts[2]["description"] %></p>
+        </div>
+        <div class="image-container">
+            <img class="image" src="../gallery.jpg">
+        </div>
+    </div>
+    <table>
+        <tr>
+            <td>
+                <a class="create" href= "/create">Create</a>
+            </td>
+            <td>
+                <a class="explore" href= "/travel_suggestions">Explore</a>
+            </td>
+            <td>
+                <a class="home" href= "/">Home</a>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
+

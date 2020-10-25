@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<table>
+<tr>
+    <td>
+        <a class="explore-title" href= "/create">Create</a>
+    </td>
+    <td>       
+        <div data-scroll-container>
+            <section data-scroll-section>
+                <div class="main-title">  
+                    <h2 data-scroll data-scroll-speed="2" data-scroll-section data-scroll-position="top">E</h2>
+                    <h2 data-scroll data-scroll-speed="-1" data-scroll-section data-scroll-position="top">X</h2>
+                    <h2 data-scroll data-scroll-speed="4" data-scroll-section data-scroll-position="top">P</h2>
+                    <h2 data-scroll data-scroll-speed="-2" data-scroll-section data-scroll-position="top">L</h2>
+                    <h2 data-scroll data-scroll-speed="" data-scroll-section data-scroll-position="top">O</h2>
+                    <h2 data-scroll data-scroll-speed="2" data-scroll-section data-scroll-position="top">R</h2>
+                    <h2 data-scroll data-scroll-speed="2" data-scroll-section data-scroll-position="top">E</h2>
+                </div>
+            </section>   
+        </div>
+    </td>
+    <td>
+        <a class="explore-title" href= "/travel_posts">Memories</a>
+    </td>
+</tr>
+</table>       
+
+        <div class="suggestions">
+            <div>
+                <p class="location"> <%= travel_suggestions[0]["location"].upcase %></p>
+            </div>
+            <div >
+                <p class="explore-content"><a href="/culture/<%= culture[0]["id"]%>">Culture</a></p>
+            </div>
+            <div >
+                <p class="explore-content"><a href="/events/<%= events[0]["id"]%>">Events</a></p>
+            </div>
+            <div >
+                <p class="explore-content"><a href="/accomodation/<%= accomodation[0]["id"]%>">Accomodation</a></p>
+            </div>
+        </div>
+        <div class="travel-posts">
+            <div >
+                <p class="explore-content"> <%= travel_suggestions[0]["description"] %></p>
+            </div>
+            <div class="image-container">
+                <img class="image" src="../paris.jpg">
+            </div>
+        </div>
+
+        <div class="suggestions">
+            <div>
+                <p class="location"> <%= travel_suggestions[1]["location"].upcase %></p>
+            </div>
+            <div >
+                <p class="explore-content"><a href="/">Culture</a></p>
+            </div>
+            <div >
+                <p class="explore-content"><a href="/">Events</a></p>
+            </div>
+            <div >
+                <p class="explore-content"><a href="/">Accomodation</a></p>
+            </div>
+        </div>
+
+        # events/<%= events[1]["id"]%>
+        <div class="travel-posts">
+            <div class="image-container">
+                <img class="image" src="../london.jpg">
+            </div>
+            <div >
+                <p class="explore-content"> <%= travel_suggestions[1]["description"] %></p>
+            </div>
+        </div>
+        <table>
+        <tr>
+            <td>
+                <a class="create" href= "/create">Create</a>
+            </td>
+            <td>
+                <a class="explore" href= "/travel_suggestions">Explore</a>
+            </td>
+            <td>
+                <a class="home" href= "/">Home</a>
+            </td>
+        </tr>
+    </table>
+
+
+</body>
+</html>

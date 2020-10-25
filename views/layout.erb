@@ -3,12 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <title>Hello World</title>
-  <link rel='stylesheet' href='/stylesheets/main.css'>
+  <link rel='stylesheet' href='../stylesheets/main.css'>
+  <link rel='stylesheet' href='../stylesheets/css.css'>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100&display=swap" rel="stylesheet">
 </head>
 <body>
-
+  <% if logged_in? %>
+    <% current_user.first["email"] %>
+        <form action="/logout" method="post">
+        <input type="hidden" name="_method" value="delete"> 
+        <button class="title-button">Logout</button>
+        </form>
+  <% end %>
   <%= yield %>
-
 </body>
+<script type="module" src="../javascripts/application.js"></script>
 </html>
