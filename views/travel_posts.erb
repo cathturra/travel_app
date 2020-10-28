@@ -34,39 +34,29 @@
             </td>
         </tr>
     </table>
-    <div class="travel-posts">
-        <div class="location">
-            <p class="location"> <%= travel_posts[0]["location"].upcase %></p>
+
+    <% travel_posts.each do |travel_post| %>
+        <div class="travel-posts">
+            <div class="location">
+                <p class="location"> <%= travel_post["location"] %></p>
+            </div>
+            <div  class="description">
+                <p> <%= travel_post["description"] %></p>
+            </div>
+            <div>
+                <form action="/travel_post" method="post">
+                    <input type="hidden" name="_method" value="delete">
+                    <input type="hidden" name="id" value="<%= travel_post["id"] %>">
+                    <button class="button">Remove</button>
+                </form>
+            </div>
+            <div>
+                <a class="update" href= "/update/<%= travel_post['id'] %>">Update</a>
+            </div>
         </div>
-        <div  class="description">
-            <p> <%= travel_posts[0]["description"] %></p>
-        </div>
-        <div class="image-container">
-            <img class="image" src="../venice.jpg">
-        </div>
-    </div>
-    <div class="travel-posts">
-        <div class="image-container">
-            <img class="image" src="../bondi.JPG">
-        </div>
-        <div  class="description">
-            <p> <%= travel_posts[1]["description"] %></p>
-        </div>
-        <div class="location">
-            <p class="location"> <%= travel_posts[1]["location"].upcase %></p>
-        </div>
-    </div>
-    <div class="travel-posts">
-        <div class="location">
-            <p class="location"> <%= travel_posts[2]["location"].upcase %></p>
-        </div>
-        <div  class="description">
-            <p> <%= travel_posts[2]["description"] %></p>
-        </div>
-        <div class="image-container">
-            <img class="image" src="../gallery.jpg">
-        </div>
-    </div>
+    <% end %>
+
+
     <table>
         <tr>
             <td>

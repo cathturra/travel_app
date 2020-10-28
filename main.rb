@@ -40,10 +40,36 @@ get '/travel_posts' do
   erb(:'/travel_posts', locals: {travel_posts: travel_posts})
 end
 
-# post '/travel_posts' do
+post '/travel_posts' do
   
-#   create_post(params[:location], params[:description])
-#   redirect '/travel_posts'
+  create_post(params[:location], params[:description])
+  redirect '/travel_posts'
+end
+
+get '/update/:id' do
+
+  travel_post = travel_post_by_id(params[:id])
+  erb(:'/update', locals: {travel_post: travel_post})
+end
+
+patch '/travel_posts' do 
+
+  update_post(params[:location], params[:description], params[:id])
+  redirect '/travel_posts'
+end
+
+delete '/travel_post' do
+
+  delete_post(params[:id])
+
+  redirect'/travel_posts'
+end
+
+# post '/travel_posts/:id' do 
+#   travel_post = travel_post_by_id(params[:id])
+
+#   delete(travel_post)
+#   erb(:'/travel_post', locals: {travel_post: travel_post})
 # end
 
 get '/travel_suggestions' do

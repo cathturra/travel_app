@@ -1,0 +1,9 @@
+<form action= "/travel_posts" method="post">
+    <input name="_method" type="hidden" value="patch">
+    <input name="id" type="hidden" value="<%= travel_post["id"] %>">
+    <label for="">Location</label>
+    <input name="location" type="text" value="<%= travel_post["location"] %>">
+    <label for="">Description</label>
+    <input name="description" type="text" value="<%= travel_post["description"] %>">
+    <button>Update</button>
+</form>
