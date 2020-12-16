@@ -9,6 +9,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100&display=swap" rel="stylesheet">
 </head>
 <body>
+<%= yield %>
+<div id="logout">
   <% if logged_in? %>
     <% current_user.first["email"] %>
         <form action="/logout" method="post">
@@ -16,7 +18,7 @@
         <button class="title-button">Logout</button>
         </form>
   <% end %>
-  <%= yield %>
+</div>
 </body>
 <script type="module" src="../javascripts/application.js"></script>
 </html>

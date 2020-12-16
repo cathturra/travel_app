@@ -34,7 +34,6 @@
             </td>
         </tr>
     </table>
-
     <% travel_posts.each do |travel_post| %>
         <div class="travel-posts">
             <div class="location">
@@ -47,7 +46,7 @@
                 <form action="/travel_post" method="post">
                     <input type="hidden" name="_method" value="delete">
                     <input type="hidden" name="id" value="<%= travel_post["id"] %>">
-                    <button class="button">Remove</button>
+                    <button class="update">Remove</button>
                 </form>
             </div>
             <div>
@@ -55,8 +54,6 @@
             </div>
         </div>
     <% end %>
-
-
     <table>
         <tr>
             <td>

@@ -31,7 +31,19 @@ img {
 }
 
 body {
-    background-color: rgb(54, 52, 53);
+    background-color:  rgb(42, 48, 53);
+}
+
+label {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 40px;
+    font-weight: lighter;
+    color: rgb(248, 246, 248);
+    letter-spacing: 4px;
+}
+
+input {
+    border-bottom: 1px solid #fff;
 }
 
 .explore-content {
@@ -49,9 +61,18 @@ body {
 
 .landing {
     background-image: url(../landing.JPG);
+    height: 22em;
+    background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center; 
+    /* background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(61,92,108,1) 10%, rgba(255,255,255,1) 100%);   */
 }
+
+/* .landing-section {
+    height: 200px;
+    background-color: #fff;
+} */
 
 .button {
     border: none;
@@ -68,17 +89,10 @@ button:hover {
     transition: 1s ease-in;
 }
 
-label {
-    font-family: 'Work Sans', sans-serif;
-    font-size: 40px;
-    font-weight: lighter;
-    color: rgb(248, 246, 248);
-    letter-spacing: 4px;
-}
-
 .login-buttons {
     display: flex;
     justify-content: center;
+    /* background-color: #fff; */
 }
 
 .main-button {
@@ -87,7 +101,7 @@ label {
     font-family: 'Work Sans', sans-serif;
     font-size: 27px;
     font-weight: lighter;
-    color: rgb(248, 246, 248);
+    color: #fff;
     letter-spacing: 4px;
     padding: 20px;
 }
@@ -141,10 +155,6 @@ label {
 .explore:hover {
     color: rgb(192, 192, 192);
     transition: 1s ease-in;
-}
-
-input {
-    border-bottom: 1px solid #fff;
 }
 
 .home {
@@ -202,7 +212,9 @@ input {
     font-weight: lighter;
     color: rgb(248, 246, 248);
     letter-spacing: 4px;
-    padding-left: 70px;
+    margin-right: 40px;
+    border: none;
+    background: none;
 }
 
 .update:hover {
@@ -233,6 +245,7 @@ input[type="text"] {
     font-size: 20px;
     font-weight: lighter;
     letter-spacing: 2px;
+    border-bottom: 1px solid #fff;
 }
 
 input[type="password"] {
@@ -247,6 +260,16 @@ input[type="password"] {
     font-size: 20px;
     font-weight: lighter;
     letter-spacing: 2px;
+    border-bottom: 1px solid #fff;
+}
+
+.location {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 60px;
+    font-weight: lighter;
+    color: rgb(248, 246, 248);
+    letter-spacing: 2px;
+    padding: 40px;
 }
 
 .session-form {
@@ -284,15 +307,6 @@ input[type="password"] {
     align-items: center;
 }
 
-.location {
-    font-family: 'Work Sans', sans-serif;
-    font-size: 60px;
-    font-weight: lighter;
-    color: rgb(248, 246, 248);
-    letter-spacing: 2px;
-    padding: 40px;
-}
-
 .page-top {
     display: flex;
     align-items: center;
@@ -300,10 +314,6 @@ input[type="password"] {
 
 .col {
     margin: 40px;
-}
-
-#description-input {
-    height: 120px;
 }
 
 table {
@@ -324,5 +334,24 @@ table {
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+
+#description-input {
+    height: 120px;
+    border-bottom: 1px solid #fff;
+}
+
+#location {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+    color: rgb(248, 246, 248);
+    border-bottom: 1px solid #fff;
+}
+
+#logout {
+    display: flex;
+    align-items: baseline;
+    flex-direction: row-reverse;
 }
 

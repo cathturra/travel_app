@@ -65,13 +65,6 @@ delete '/travel_post' do
   redirect'/travel_posts'
 end
 
-# post '/travel_posts/:id' do 
-#   travel_post = travel_post_by_id(params[:id])
-
-#   delete(travel_post)
-#   erb(:'/travel_post', locals: {travel_post: travel_post})
-# end
-
 get '/travel_suggestions' do
 
   culture = all_culture()
@@ -107,7 +100,6 @@ get '/sign-up' do
 end
 
 post '/sign-up' do 
-
 
   create_user(params[:name], params[:email], params[:password])
   name = find_user_by_name(params[:name])

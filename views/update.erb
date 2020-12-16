@@ -1,9 +1,49 @@
-<form action= "/travel_posts" method="post">
-    <input name="_method" type="hidden" value="patch">
-    <input name="id" type="hidden" value="<%= travel_post["id"] %>">
-    <label for="">Location</label>
-    <input name="location" type="text" value="<%= travel_post["location"] %>">
-    <label for="">Description</label>
-    <input name="description" type="text" value="<%= travel_post["description"] %>">
-    <button>Update</button>
-</form>
+<table>
+<tr>
+    <td>
+        <a class="explore-title" href= "/travel_posts">Memories</a>
+    </td>
+    <td>       
+        <div data-scroll-container>
+            <section data-scroll-section>
+                <div class="main-title">  
+                    <h2>UPDATE</h2>
+                </div>
+            </section>   
+        </div>
+    </td>
+    <td>
+        <a class="explore-title" href= "/travel_suggestions">Explore</a>
+    </td>
+</tr>
+</table>
+<div class="create-form">
+    <form action= "/travel_posts" method="post">
+        <input name="_method" type="hidden" value="patch">
+        <input name="id" type="hidden" value="<%= travel_post["id"] %>">
+        <div class="col">
+            <label for="">Location</label>
+            <input id="location" name="location" type="text" value="<%= travel_post["location"] %>">
+        </div>
+        <div class="col">
+            <label for="">Description</label>
+            <input id="description-input" name="description" type="text" value="<%= travel_post["description"] %>">
+        </div>
+        <div class="col">
+            <button class="button">Update</button>
+        </div
+    </form>
+</div>
+<table>
+    <tr>
+        <td>
+            <a class="create" href= "/create">Create</a>
+        </td>
+        <td>
+            <a class="explore" href= "/travel_suggestions">Explore</a>
+        </td>
+        <td>
+            <a class="home" href= "/">Home</a>
+        </td>
+    </tr>
+</table>
